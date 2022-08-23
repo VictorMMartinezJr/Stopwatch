@@ -68,8 +68,8 @@ body {
     font-size: 5rem;
   }
   .stopwatch_btn {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
   }
   .stopwatch_btn--pause {
     margin: 0 2rem;
@@ -78,9 +78,5 @@ body {
 @media screen and (min-width: 1024px) {
   .stopwatch_numbers {
     font-size: 6rem;
-  }
-  .stopwatch_btn {
-    height: 80px;
-    width: 80px;
   }
 }

@@ -5,7 +5,7 @@ const btnStart = document.querySelector(".stopwatch_btn--start");
 const btnPause = document.querySelector(".stopwatch_btn--pause");
 const btnReset = document.querySelector(".stopwatch_btn--reset");
 
-let seconds = 3600;
+let seconds = 0;
 let minutes = 0;
 let hours = 0;
 let interval = null;
