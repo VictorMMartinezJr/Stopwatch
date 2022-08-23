@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-
+:root {
+  --black: #000;
+  --white: #f2f2f2;
+  --green-dark: #446a46;
+  --green-light: #3ccf4e;
+  --grey-dark: #413f42;
+  --grey-light: #eeeeee;
+  --orange-dark: #e45826;
+  --orange-light: #f0a500;
+}
 *,
 *::before,
 *::after {
@@ -10,4 +19,73 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--black);
+}
+/********************/
+/**    Stopwatch   **/
+/********************/
+.stopwatch_container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+/** Stopwatch numbers **/
+.stopwatch_numbers {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+/** Stopwatch btns **/
+.stopwatch_btn {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  outline: 2px solid;
+  outline-offset: 1px;
+  cursor: pointer;
+}
+.stopwatch_btn--start {
+  background-color: var(--green-dark);
+  color: var(--green-light);
+  outline-color: var(--green-dark);
+}
+.stopwatch_btn--pause {
+  margin: 0 1rem;
+  background-color: var(--grey-dark);
+  color: var(--grey-light);
+  outline-color: var(--grey-dark);
+}
+.stopwatch_btn--reset {
+  background-color: var(--orange-dark);
+  color: var(--orange-light);
+  outline-color: var(--orange-dark);
+}
+@media screen and (min-width: 320px) {
+  .stopwatch_numbers {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 390px) {
+  .stopwatch_numbers {
+    font-size: 5rem;
+  }
+  .stopwatch_btn {
+    height: 70px;
+    width: 70px;
+  }
+  .stopwatch_btn--pause {
+    margin: 0 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .stopwatch_numbers {
+    font-size: 6rem;
+  }
+  .stopwatch_btn {
+    height: 80px;
+    width: 80px;
+  }
 }
