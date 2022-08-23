@@ -43,25 +43,20 @@ body {
   width: 60px;
   border-radius: 50%;
   border: none;
-  outline: 2px solid;
-  outline-offset: 1px;
   cursor: pointer;
 }
 .stopwatch_btn--start {
   background-color: var(--green-dark);
   color: var(--green-light);
-  outline-color: var(--green-dark);
 }
 .stopwatch_btn--pause {
   margin: 0 1rem;
   background-color: var(--grey-dark);
   color: var(--grey-light);
-  outline-color: var(--grey-dark);
 }
 .stopwatch_btn--reset {
   background-color: var(--orange-dark);
   color: var(--orange-light);
-  outline-color: var(--orange-dark);
 }
 @media screen and (min-width: 320px) {
   .stopwatch_numbers {
